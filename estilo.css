@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap&family=Montserrat&display=swap');
+
+:root /*criando variaveis que se repetem livraria https://developer.mozilla.org/pt-BR/docs/Web/CSS/Using_CSS_custom_properties*/
+{
+--cor-primaria: white;
+--cor-secundaria: black;
+--cor-terciaria: #2204fd;
+--cor-quaternaria:aqua; 
+
+--fonte-principal:'Montserrat', sans-serif;
+--fonte-secundaria:'Krona One', sans-serif
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.cabecalho
+{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu
+{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__menu
+{
+    font-family:var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color:var(--cor-terciaria);
+    text-decoration: none;
+}
+.Titulo{
+    color: var(--cor-secundaria);
+    font-size: 2.18rem;
+    width: 40%;
+    padding-bottom: 5%;
+}
+.Paragrafo{
+    color:  var(--cor-secundaria);
+    align-items: center;
+}
+.apresentacao
+{
+    padding: 8% 15%;
+    display: flex;/* TIPO DE ORGANIZAÇÃO*/
+    align-items: center;
+    justify-content: space-between;
+    gap: 85px;
+}
+.apresentacao__conteudo
+{
+width: 70%;
+font-family: var(--fonte-secundaria); /*TIPO DE FONTE ENCOTRAR NO GOOGLE FONTS*/
+display: flex;
+flex-direction: column;
+
+}
+.apresentacao__conteudo__paragrafo
+{
+    font-size: 1.5rem; /*TAMANHO DA FONTE*/
+    font-family: var(--fonte-principal);
+    padding-bottom: 1%;
+   
+
+}
+.apresentacao__botoes
+{
+    display: flex;/*https://css-tricks.com/snippets/css/a-guide-to-flexbox/ guia do flebox*/
+    flex-direction: column; /* ORGANIZAÇÃO NO PLANO */
+    justify-content: space-between;/* ORGANIZAÇÃO NO PLANO */
+    align-items: center;/*ALINHAMENTO */
+  
+}
+.apresentacao__botoes__botao
+{
+   /* background-color: aqua;*/
+   display: grid;
+   justify-content: center;
+   flex-direction: row;
+    gap: 10px;
+    width: 60%;
+    text-align: center;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 08px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-family:var(--fonte-principal);
+    font-weight: 600;
+
+}
+.foto
+{
+    width: 50%;
+}
+.apresentacao__botoes__subtitulo
+{
+    font-family:var(--fonte-secundaria); 
+    font-weight: 300;
+    font-size: 1.5rem;   
+    padding: 10%;
+}
+.rodape
+{
+    padding: 24px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-quaternaria);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+   font-weight: 400; 
+   
+    
+}
+
+.apresentacao__botoes__botao:hover /* estiliza os botoes https://www.w3schools.com/cssref/sel_hover.php documentação*/
+{
+background-color: #272727;
+}
+.alias {cursor: alias;}
+
+@media(max-width:1200px)
+{
+    .Titulo
+    {
+        width: auto;
+    }
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+.apresentacao__conteudo{
+    width: auto;
+    
+}
+.foto
+{
+    width: auto;
+}
+}

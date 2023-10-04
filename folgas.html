@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">  
+<head>
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folgas</title>   
+    <link rel="stylesheet" href="./stylles/folga.css">   
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__menu"href="index1.html">Home</a>
+            <a class="cabecalho__menu__menu"href="historiadepetrolina.html">Historia de Petrolina</a>
+        </nav>
+    </header>  
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1><strong class="Titulo"><img src="./assets/logo sesau.png" alt="logo"></strong></h1>
+            <p> Pagina voltada para solicitações de folgas!</p>
+            <p>Digite os dados abaixo:</p>
+            <p></p>
+                <div class="botao">
+                </head>
+                <body>
+                    
+                    <label class="polo" for="Polo">Selecione seu Apoiador:</label><br>
+                    
+                    <select  id="Polo" multiple="multiple" size="12" style= "width:200px"> 
+                        <option value="Polo 1"> Enedina</option> 
+                        <option value="Polo 2"> Daniella</option> 
+                        <option value="Polo 3"> Jemima</option> 
+                        <option value="Polo 4"> Cecilia</option> 
+                        <option value="Polo 5"> Lana Quele</option>
+                        <option value="Polo 6"> Marianna</option> 
+                        <option value="Polo 7"> Érika</option> 
+                        <option value="Polo 8"> Karelly</option> 
+                        <option value="Polo 9"> Simone</option> 
+                        <option value="Polo 10"> Keyla</option>
+                        <option value="Polo 11"> Pétala</option>
+                        <option value="Polo 12"> Luana</option> 
+                    </select>  <br>   
+                    <input type="button" id="btnExibir" value="Enviar" />
+                    <h2 id="resultado"></h2>  
+                    <script>
+                        document.getElementById("btnExibir").onclick = function () {
+                            let ddl = document.getElementById('Polo');
+                            let itensSelecionados = Array.from(ddl.options)
+                            .filter(option=>option.selected)
+                            .map(option=>option.value)
+                            document.getElementById("resultado").innerHTML="Você selecionou: " + itensSelecionados;
+        
+                        }
+                    
+                          </script>
+                
+                    <label for="Profissao">Profissão:</label>
+                    <input type="botao" placeholder="Digite a sua profissão e o numero do conselho!">
+                    <input type="submit" value="Enviar" class="btn" />
+                    <label for="Ubs">Unidade de Saúde:</label>
+                    <input type="botao" placeholder="Digite a Ubs que trabalha!">
+                    <input type="submit" value="Enviar" class="btn" />
+                    <label for="Data da Provavel Folga">Data:</label>
+                    <input type="botao" placeholder="Digite a Data Escolhida!">
+                    <input type="submit" value="Enviar" class="btn" />
+                    </div>
+    </section>
+    </main>
+  
+    <footer >
+        <a class="rodape"> Desenvolvido Por Diego Ferreira Carneiro</a>
+    </footer> 
+</body>
+</html>

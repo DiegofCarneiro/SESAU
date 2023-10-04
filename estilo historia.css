@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+.cabecalho
+{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu
+{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__menu
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;/* deve ser em rem pois esssa unidade se adapta a pag, 16px equivale a 1 rem*/
+    color: #2204fd;
+    text-decoration: none;
+}
+.Titulo{
+    color: black;
+    font-size: 2.18rem;
+    width: 40%;
+}
+.titulo2{
+    color: black;
+    font-size: 2.18rem;
+}
+.apresentacao
+{
+    padding: 8% 15%;
+    display: flex;/* TIPO DE ORGANIZAÇÃO*/
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.apresentacao__conteudo
+{
+width: 70%;
+font-family: 'Krona One', sans-serif; /*TIPO DE FONTE ENCOTRAR NO GOOGLE FONTS*/
+display: flex;
+flex-direction: column;
+gap: 20px;/*ESPAÇAMENTO */
+}
+.apresentacao__conteudo__paragrafo
+{
+    font-size: 1.5rem; /*TAMANHO DA FONTE*/
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+.foto
+{
+    width: 50%;
+}
+.rodape
+{
+    padding: 24px;
+    color:black;
+    background-color: aqua;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+   font-weight: 400; 
+   
+    
+}
